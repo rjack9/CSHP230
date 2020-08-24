@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "8293aea8-96f7-4a18-bb39-b1c2da3a2ee6",
+		"name": "_Users Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:49370/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "49370",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Email\": \"rick@rick\",\r\n    \"Password\": \"Password4\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:49370/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "49370",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete specific",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:49370/api/users/5aa62d59-dc4a-4391-a3aa-69cd6c6b96b6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "49370",
+					"path": [
+						"api",
+						"users",
+						"5aa62d59-dc4a-4391-a3aa-69cd6c6b96b6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get specific",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:49370/api/users/27adca95-b3bd-4dea-9705-bb49a06db950",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "49370",
+					"path": [
+						"api",
+						"users",
+						"27adca95-b3bd-4dea-9705-bb49a06db950"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put specific",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Email\": \"rick@rick-modified\",\r\n    \"Password\": \"Password4\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:49370/api/users/b548d752-bd47-4418-920c-a9700b8305c0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "49370",
+					"path": [
+						"api",
+						"users",
+						"b548d752-bd47-4418-920c-a9700b8305c0"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

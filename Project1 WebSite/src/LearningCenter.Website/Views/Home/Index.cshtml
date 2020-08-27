@@ -1,0 +1,18 @@
+﻿@model LearningCenter.Website.Models.IndexModel
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>The Learning Center</h1>
+    <p class="lead">The place for technology classes.</p>
+    <p>These are our currrent classes</p>
+</div>
+
+
+    @foreach (var studentclass in Model.Classes)
+    {
+        @String.Format("{0} - {1} - {2:c}", studentclass.Name, studentclass.Description, studentclass.Price)
+       <a asp-action="RegisterForClass" asp-route-id="@studentclass.Id">Register for this class</a>
+       <br/>
+    }
